@@ -48,7 +48,7 @@
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="SWITCH">
+                                        <fragment content="PUSH!">
                                             <attributes>
                                                 <color key="NSColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <font key="NSFont" size="30" name="Helvetica"/>
@@ -58,7 +58,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="pressButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ceJ-Zb-nTi"/>
+                                    <action selector="switchButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNc-gU-yU8"/>
                                 </connections>
                             </button>
                         </subviews>
