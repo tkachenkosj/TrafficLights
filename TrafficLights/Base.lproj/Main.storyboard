@@ -29,28 +29,6 @@
                                     <constraint firstAttribute="width" secondItem="7JK-rk-JaG" secondAttribute="height" multiplier="1:1" id="95m-dk-AUg"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zWV-ba-leo">
-                                <rect key="frame" x="117" y="772" width="180" height="60"/>
-                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Gmb-95-zSU"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="ZKE-Ft-DNX"/>
-                                </constraints>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="PUSH!">
-                                            <attributes>
-                                                <color key="NSColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                <font key="NSFont" size="30" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="switchButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNc-gU-yU8"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOh-2s-X4L">
                                 <rect key="frame" x="115.5" y="499" width="183" height="183"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,16 +36,27 @@
                                     <constraint firstAttribute="width" secondItem="MOh-2s-X4L" secondAttribute="height" multiplier="1:1" id="hsf-RN-Azn"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62z-Yy-ZFO">
+                                <rect key="frame" x="117" y="765" width="180" height="60"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="iHC-ZL-hvV"/>
+                                </constraints>
+                                <state key="normal" title="START!"/>
+                                <connections>
+                                    <action selector="pressOnButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLZ-uc-wUU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MOh-2s-X4L" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75:368" id="5eO-WA-LnF"/>
-                            <constraint firstItem="zWV-ba-leo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8nU-Bg-hAT"/>
-                            <constraint firstItem="zWV-ba-leo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="45:224" id="EYq-Cm-9Tq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zWV-ba-leo" secondAttribute="bottom" constant="30.000000000000114" id="F9G-zu-LI6"/>
+                            <constraint firstItem="62z-Yy-ZFO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FNw-F4-oHc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="62z-Yy-ZFO" secondAttribute="bottom" constant="37" id="GcS-ap-Ghd"/>
                             <constraint firstItem="IDY-3l-Xs1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LLz-uY-HSj"/>
                             <constraint firstItem="IDY-3l-Xs1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Qld-3e-GMZ"/>
                             <constraint firstItem="MOh-2s-X4L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YoL-D5-cBG"/>
+                            <constraint firstItem="62z-Yy-ZFO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="45:224" id="hcq-JW-iya"/>
                             <constraint firstItem="7JK-rk-JaG" firstAttribute="top" secondItem="IDY-3l-Xs1" secondAttribute="bottom" constant="30" id="mTN-zy-OPK"/>
                             <constraint firstItem="7JK-rk-JaG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75:368" id="muO-OJ-bs9"/>
                             <constraint firstItem="MOh-2s-X4L" firstAttribute="top" secondItem="7JK-rk-JaG" secondAttribute="bottom" constant="30" id="qy0-yK-7nh"/>
@@ -79,7 +68,7 @@
                     <connections>
                         <outlet property="greenLight" destination="MOh-2s-X4L" id="v1u-ml-6SS"/>
                         <outlet property="redLight" destination="IDY-3l-Xs1" id="u9E-te-861"/>
-                        <outlet property="switchButton" destination="zWV-ba-leo" id="3FA-Ee-2vr"/>
+                        <outlet property="switchButton" destination="62z-Yy-ZFO" id="Vw9-TH-Dgd"/>
                         <outlet property="yellowLight" destination="7JK-rk-JaG" id="thb-H5-Y10"/>
                     </connections>
                 </viewController>

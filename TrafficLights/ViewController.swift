@@ -44,9 +44,8 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func switchButtonPressed() {
-        
-        switchButton.setTitle("SWITCH!", for: .highlighted)
+    @IBAction func pressOnButton() {
+        switchButton.setTitle("NEXT!", for: .normal)
         
         switch currentLight {
         case .red:
@@ -63,5 +62,6 @@ class ViewController: UIViewController {
             currentLight = .red
         }
     }
+
 }
 
